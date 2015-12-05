@@ -1,0 +1,19 @@
+@import "_mixins.scss";
+@import "compass/typography/vertical_rhythm";
+@import "compass/utilities/general/float";
+@import "compass/typography/links/link-colors";
+@import "compass/css3";
+
+
+$large_screen:'min-width: 1200px';
+$medium_screen:'min-width: 992px';
+$small_screen:'min-width: 768px';
+$verysmall_screen:'max-width: 767px';
+
+
+
+$max_width:1140px;
+$base-font-size: 16px;
+$base-line-height: 28px;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: true;

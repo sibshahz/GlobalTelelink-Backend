@@ -1,0 +1,17 @@
+/*Base Settings Styles*/
+/* line 61, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.75em;
+}
+
+/* line 5, ../sass/style.scss */
+body {
+  font-size: 1em;
+  line-height: 1.75em;
+}

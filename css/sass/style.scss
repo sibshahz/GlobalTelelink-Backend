@@ -1,0 +1,7 @@
+@import "_base.scss";
+/*Base Settings Styles*/
+@include establish-baseline();
+
+body{
+	@include adjust-font-size-to(16px);
+}

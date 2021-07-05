@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Your Website title here</title>
+	<title>Global Telelink</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<!-- fontAwsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- StyleSheet -->
 	<link rel="stylesheet" href="css/stylesheets/style.css">
 	<!--[if lt IE 7]>
@@ -40,16 +45,387 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<header>
-				
-		</header>
+		<header class="clearfix">
+				<div class="entr-con row">
+					<div class="content-width">
+						<div class="cus-det-con col-xs-12 col-sm-6">
+							<div class="use-pic">
+								<span class="fa fa-user"></span>
+							</div>
+							<div class="use-com-det">
+								<h5>Customer Name</h5>
+								<div class="wel-cus">Welcome You are logged in as "Shop Keeper"</div>
+								<div class="cus-id">Customer ID: abcs</div>
+								<div class="cus-bal">Current Balance: 70000.00 &euro;</div>
+							</div>
+						</div><!--end cus-det-con-->
 
+						<div class="use-ope col-xs-12 col-sm-6">
+							<ul class="use-opt">
+								<li><a href="login.html"><span class="fa fa-power-off"></span>Log out</a></li>
+								<li class="list-selector"><a href="#"><span class="fa fa-cogs"></span><span>Settings</span></a>
+									<ul class="select-list">
+										<li><a href="user-management.html">User Management</a></li>
+										<li><a href="#">Tracking</a></li>
+									</ul>
+								</li>
+								<li class="list-selector"><a href="#"><span class="fa fa-language"></span><span>Language</span></a>
+									<ul class="select-list">
+										<li><a href="#">English</a></li>
+										<li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--end content width-->
+				</div><!--end entr-con-->
+
+				<div class="nav-con">
+					<div class="content-width">
+					<a href="#" class="nav-op"><span class="fa fa-bars"></span></a>
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html"><span class="fa fa-home"></span>HOME</a></li>
+								<li><a href="store-page.html"><span class="fa fa-shopping-bag"></span>SHOP</a></li>
+								<li><a href="report-profit.html"><span class="fa fa-eur"></span>PROFIT/LOSS</a></li>
+								<li><a href="report-sales.html"><span class="fa fa-line-chart"></span>SALE</a></li>
+								<li><a href="report-discount.html"><span class="fa fa-tags"></span>DISCOUNTS</a></li>
+								<li><a href="report-uploads.html"><span class="fa fa-upload"></span>UPLOADS</a></li>
+								<li><a href="report-daily-sale.html"><span class="fa fa-bar-chart"></span>DAILY SALE</a></li>
+								<li><a href="report-invoices.html"><span class="fa fa-list-alt"></span>INVOICES</a></li>
+								<li><a href="report-return.html"><span class="fa fa-reply-all"></span>RETURN</a></li>
+								<li><a href="contact-us.html"><span class="fa fa-envelope"></span>CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div><!--end nav-con-->
+
+		</header>
+		
+		<div class="content-width content-main">
+			
+			<div class="fea-sec clearfix">
+				<div class="quick-view-con col-xs-12 col-sm-8">
+					<div class="quick-view clearfix">
+						<h1 class="pull-left">Quick View</h1>
+						<div class="pull-right">
+							<a href="#"><span class="fa fa-times"></span></a>
+							<a href="#"><span class="fa fa-refresh"></span></a>
+						</div>
+					</div>
+					<div class="tagline">Check out the Quick Over View</div>
+					<div class="quick-sal-rep">
+						<h3>MY SALES</h3>
+						<div class="stat">
+							<div class="stat-tit">Today Sale</div>
+							<div class="stat-val">125,30 &euro;</div>
+						</div>
+
+						<div class="stat">
+							<div class="stat-tit">Yesterday Sale</div>
+							<div class="stat-val">325,30 &euro;</div>
+						</div>
+
+						<div class="stat">
+							<div class="stat-tit">This Month Sale</div>
+							<div class="stat-val">725,30 &euro;</div>
+						</div>
+
+						<div class="stat">
+							<div class="stat-tit">Last Month Sale</div>
+							<div class="stat-val">1025,30 &euro;</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="cal-con col-xs-12 col-sm-4">
+					<div class="calendar-con" id="calendar-con"><div class="calendar-today" id="simple-calendar"></div></div>
+				</div>
+			</div><!--end fea-sec-->
+
+			<div class="usr-mgt-sec">
+				<h1>Current User</h1>
+				<div class="tag-line">Add or Remove your Current Users</div>
+				<div class="usr-act">
+					<div class="table-responsive">
+
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>
+									</th>
+									
+									<th>
+										
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												SalesMan
+											</label>
+										</div>
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												Shopkeeper | Employee
+											</label>
+										</div>
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												Active
+											</label>
+										</div>
+
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												In Active
+											</label>
+										</div>
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="checked">
+												View All
+											</label>
+										</div>
+									</th>
+
+								</tr>
+								<tr>
+									<th>User Image</th>
+									<th>Login Name</th>
+									<th>User Name (Role)</th>
+									<th>Parent (Role)</th>
+									<th>Status</th>
+									<th>Action</th>
+
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					
+					</div><!--table responsive end-->
+				</div><!--usr act end-->
+			</div><!--end usr-mgt-sec-->
+
+			<div class="rep-sec clearfix">
+				<div class="col-xs-12 col-sm-6">
+					<h1>My Sale Report</h1>
+					<span class="tag-line">Check out all your sales report dated: 12/12/2013 to 12/12/2014</span>	
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="input-group calendar-con">
+						<div class="input-group-addon">
+							<label>From Date</label>
+						</div>
+						<input type="text" class="form-control jq-calendar">
+						<div class="input-group-addon arrowDown">
+							<span class="fa fa-chevron-down"></span>
+						</div>
+					</div>
+
+					<div class="input-group calendar-con">
+						<div class="input-group-addon">
+							<label>To Date</label>
+						</div>
+						<input type="text" class="form-control jq-calendar">
+						<div class="input-group-addon arrowDown">
+							<span class="fa fa-chevron-down"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="rep-cont col-xs-12">
+					<div class="rep-tit-sec col-xs-12">
+						<h4 class="pull-left">My Invoice</h4>
+						<a href="#"><span class="fa fa-times pull-right"></span></a>
+					</div>
+
+					<div class="table-responsive col-xs-12">
+						<table class="table">
+								<thead>
+									<tr>
+										<th>Customer</th>
+										<th>IP</th>
+										<th>Time</th>
+										<th>Total Face Value</th>
+										<th>Total Discount</th>
+										<th>Total Sale</th>
+										<th>ID</th>
+										<th>Print</th>
+										<th>Download</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="det-con">
+								<div class="det-row">
+									<span class="det-tit">Total Face Value: </span>
+									<span class="det-val">$95.00</span>
+								</div>
+
+								<div class="det-row">
+									<span class="det-tit">Total Discount: </span>
+									<span class="det-val">$6.05</span>
+								</div>
+
+								<div class="det-row">
+									<span class="det-tit">Total Sale: </span>
+									<span class="det-val">$101.05</span>
+								</div>
+
+							</div>
+
+						</div>
+				</div>
+
+			</div><!--end rep-sec-->
+
+		</div><!--content main end-->
+		
+		<footer>
+			<div class="footerBar">
+				<div class="content-width">
+					<h5>&copy; 2015 www.simxpins.com &trade;. All Rights Reserved.</h5>
+				</div>
+			</div>	
+		</footer>
 	</div><!--container fuid end-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="scripts/jquery-2.1.4.min.js"></script> 
+<script src="scripts/jquery-ui.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="scripts/bootstrap.min.js"></script>
 <!--  Main script file -->
-<script src="scripts/scripts.js"></script>  
+<script src="scripts/scripts.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>  
 </body>
 </html>

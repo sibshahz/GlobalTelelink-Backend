@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Global Telelink</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<!-- fontAwsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- StyleSheet -->
+	<link rel="stylesheet" href="css/stylesheets/style.css">
+	<!--[if lt IE 7]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	  <script type="text/javascript" src="scripts/selectivizr.js"></script>
+	  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]-->
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	      <script src="scripts/html5.js"></script>
+	      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link href="css/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+	      <link href="css/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="clearfix">
+				<div class="entr-con row">
+					<div class="content-width">
+						<div class="cus-det-con col-xs-12 col-sm-6">
+							<div class="use-pic">
+								<span class="fa fa-user"></span>
+							</div>
+							<div class="use-com-det">
+								<h5>Customer Name</h5>
+								<div class="wel-cus">Welcome You are logged in as "Shop Keeper"</div>
+								<div class="cus-id">Customer ID: abcs</div>
+								<div class="cus-bal">Current Balance: 70000.00 &euro;</div>
+							</div>
+						</div><!--end cus-det-con-->
+
+						<div class="use-ope col-xs-12 col-sm-6">
+							<ul class="use-opt">
+								<li><a href="login.html"><span class="fa fa-power-off"></span>Log out</a></li>
+								<li class="list-selector"><a href="#"><span class="fa fa-cogs"></span><span>Settings</span></a>
+									<ul class="select-list">
+										<li><a href="user-management.html">User Management</a></li>
+										<li><a href="#">Tracking</a></li>
+									</ul>
+								</li>
+								<li class="list-selector"><a href="#"><span class="fa fa-language"></span><span>Language</span></a>
+									<ul class="select-list">
+										<li><a href="#">English</a></li>
+										<li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--end content width-->
+				</div><!--end entr-con-->
+
+				<div class="nav-con">
+					<div class="content-width">
+					<a href="#" class="nav-op"><span class="fa fa-bars"></span></a>
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html"><span class="fa fa-home"></span>HOME</a></li>
+								<li><a href="store-page.html"><span class="fa fa-shopping-bag"></span>SHOP</a></li>
+								<li><a href="report-profit.html"><span class="fa fa-eur"></span>PROFIT/LOSS</a></li>
+								<li><a href="report-sales.html"><span class="fa fa-line-chart"></span>SALE</a></li>
+								<li><a href="report-discount.html"><span class="fa fa-tags"></span>DISCOUNTS</a></li>
+								<li><a href="report-uploads.html"><span class="fa fa-upload"></span>UPLOADS</a></li>
+								<li><a href="report-daily-sale.html"><span class="fa fa-bar-chart"></span>DAILY SALE</a></li>
+								<li><a href="report-invoices.html"><span class="fa fa-list-alt"></span>INVOICES</a></li>
+								<li><a href="report-return.html"><span class="fa fa-reply-all"></span>RETURN</a></li>
+								<li><a href="contact-us.html"><span class="fa fa-envelope"></span>CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div><!--end nav-con-->
+
+		</header>
+		
+		<div class="content-width content-main">
+			
+			<!--Profit and Loss Report-->
+			<div class="rep-sec clearfix" id="profit-report">
+				<div class="col-xs-12 col-sm-6">
+					<h1>My Profit and Loss</h1>
+					<div class="tag-line">Check out all your Profit and Loss dated: 12/12/2013 to 12/12/2014</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="input-group calendar-con">
+						<div class="input-group-addon">
+							<label>From Date</label>
+						</div>
+						<input type="text" class="form-control jq-calendar">
+						<div class="input-group-addon arrowDown">
+							<span class="fa fa-chevron-down"></span>
+						</div>
+					</div>
+
+					<div class="input-group calendar-con">
+						<div class="input-group-addon">
+							<label>To Date</label>
+						</div>
+						<input type="text" class="form-control jq-calendar">
+						<div class="input-group-addon arrowDown">
+							<span class="fa fa-chevron-down"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="rep-cont col-xs-12">
+					<div class="rep-tit-sec col-xs-12">
+						<h4 class="pull-left">My Invoice</h4>
+						<a href="#"><span class="fa fa-times pull-right"></span></a>
+					</div>
+
+					<div class="table-responsive col-xs-12">
+						<table class="table">
+								<thead>
+									<tr>
+										<th>Customer</th>
+										<th>IP</th>
+										<th>Time</th>
+										<th>Total Face Value</th>
+										<th>Total Discount</th>
+										<th>Total Sale</th>
+										<th>ID</th>
+										<th>Print</th>
+										<th>Download</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+
+									<tr>
+										<td>abc</td>
+										<td>192.168.1.1</td>
+										<td>11:08am</td>
+										<td>10$</td>
+										<td>0.10$</td>
+										<td>100USD</td>
+										<td>001</td>
+										<td>0.001</td>
+										<td><a href="#">Download</a></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+				</div>
+
+			</div><!--end rep-sec clearfix-->
+			<!--Profit and Loss Report end-->
+
+		</div><!--content main end-->
+		
+		<footer>
+			<div class="footerBar">
+				<div class="content-width">
+					<h5>&copy; 2015 www.simxpins.com &trade;. All Rights Reserved.</h5>
+				</div>
+			</div>	
+		</footer>
+	</div><!--container fuid end-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="scripts/jquery-2.1.4.min.js"></script> 
+<script src="scripts/jquery-ui.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="scripts/bootstrap.min.js"></script>
+<!--  Main script file -->
+<script src="scripts/scripts.js"></script>  
+</body>
+</html>

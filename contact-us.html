@@ -5,11 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Your Website title here</title>
+	<title>Global Telelink</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<!-- fontAwsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- StyleSheet -->
 	<link rel="stylesheet" href="css/stylesheets/style.css">
 	<!--[if lt IE 7]>
@@ -40,13 +45,140 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<header>
-				
-		</header>
+		<header class="clearfix">
+				<div class="entr-con row">
+					<div class="content-width">
+						<div class="cus-det-con col-xs-12 col-sm-6">
+							<div class="use-pic">
+								<span class="fa fa-user"></span>
+							</div>
+							<div class="use-com-det">
+								<h5>Customer Name</h5>
+								<div class="wel-cus">Welcome You are logged in as "Shop Keeper"</div>
+								<div class="cus-id">Customer ID: abcs</div>
+								<div class="cus-bal">Current Balance: 70000.00 &euro;</div>
+							</div>
+						</div><!--end cus-det-con-->
 
+						<div class="use-ope col-xs-12 col-sm-6">
+							<ul class="use-opt">
+								<li><a href="login.html"><span class="fa fa-power-off"></span>Log out</a></li>
+								<li class="list-selector"><a href="#"><span class="fa fa-cogs"></span><span>Settings</span></a>
+									<ul class="select-list">
+										<li><a href="user-management.html">User Management</a></li>
+										<li><a href="#">Tracking</a></li>
+									</ul>
+								</li>
+								<li class="list-selector"><a href="#"><span class="fa fa-language"></span><span>Language</span></a>
+									<ul class="select-list">
+										<li><a href="#">English</a></li>
+										<li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--end content width-->
+				</div><!--end entr-con-->
+
+				<div class="nav-con">
+					<div class="content-width">
+					<a href="#" class="nav-op"><span class="fa fa-bars"></span></a>
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html"><span class="fa fa-home"></span>HOME</a></li>
+								<li><a href="store-page.html"><span class="fa fa-shopping-bag"></span>SHOP</a></li>
+								<li><a href="report-profit.html"><span class="fa fa-eur"></span>PROFIT/LOSS</a></li>
+								<li><a href="report-sales.html"><span class="fa fa-line-chart"></span>SALE</a></li>
+								<li><a href="report-discount.html"><span class="fa fa-tags"></span>DISCOUNTS</a></li>
+								<li><a href="report-uploads.html"><span class="fa fa-upload"></span>UPLOADS</a></li>
+								<li><a href="report-daily-sale.html"><span class="fa fa-bar-chart"></span>DAILY SALE</a></li>
+								<li><a href="report-invoices.html"><span class="fa fa-list-alt"></span>INVOICES</a></li>
+								<li><a href="report-return.html"><span class="fa fa-reply-all"></span>RETURN</a></li>
+								<li><a href="contact-us.html"><span class="fa fa-envelope"></span>CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div><!--end nav-con-->
+
+		</header>
+		
+		<div class="content-width content-main">
+			<h1>Contact Us</h1>
+			<h5>Lorem ipsum dolor sit amet, consecretur adipsicing elit.</h5>
+			<div class="map-cont">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d40914.0228818829!2d8.566612085644527!3d50.14006663539752!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1449508513729" width="1170" height="354" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+			<div class="con-info">
+				<h1>Contact Info</h1>
+				<div class="con-det row">
+					<div class="con-sec col-xs-12 col-sm-6">
+						<div class="con-mod">
+							<div class="icon-container"><span class="fa fa-map-marker"></span></div>
+							<h3>Address:</h3>
+							<div>SimXPress Gmbh, Mergenthalerallee 77 65769 Eschborn</div>
+						</div>
+
+						<div class="con-mod">
+							<div class="icon-container"><span class="fa fa-phone"></span></div>
+							<h3>Phone:</h3>
+							<div>06196-5245863</div>
+						</div>
+
+						<div class="con-mod">
+							<div class="icon-container"><span class="fa fa-fax"></span></div>
+							<h3>Fax:</h3>
+							<div>06196-5245863</div>
+						</div>
+
+						<div class="con-mod">
+							<div class="icon-container"><span class="fa fa-envelope"></span></div>
+							<h3>Email:</h3>
+							<div>info@simxpress.de</div>
+							<div>office@simxpress.de</div>
+						</div>
+					</div>
+
+					<div class="con-sec col-xs-12 col-sm-6">
+						<div class="con-mod">
+							<div class="icon-container"><span class="fa fa-briefcase"></span></div>
+							<div class="content-stack">
+								<h3>Bankverbindung:</h3>
+								<div>Franfurter Sparkasse</div>
+								<div><span class="tit">BLZ:</span><span class="val">500 502 01</span></div>
+								<div><span class="tit">Konto-Nr:</span><span class="val">200473395</span></div>
+								<div><span class="tit">IBAN:</span><span class="val">DE40 5005 0201 0200 4733 95</span></div>
+								<div><span class="tit">BIC:</span><span class="val">HELADEF1822</span></div>
+							</div>
+						</div>
+
+						<div class="con-mod">
+							<div class="icon-container hider"><span class="fa fa-address"></span></div>
+							<div class="content-stack">
+								<h3>Postbank:</h3>
+								<div><span class="tit">BLZ:</span><span class="val">50010060</span></div>
+								<div><span class="tit">Konto-Nr:</span><span class="val">990690600</span></div>
+								<div><span class="tit">IBAN:</span><span class="val">DE20 5001 0060 0990 6906 00</span></div>
+								<div><span class="tit">BIC:</span><span class="val">PBNKDEFF</span></div>
+							</div>
+						</div>
+
+					</div>
+				</div><!--end con-det-->
+			</div><!--end con-info-->
+		</div><!--content main end-->
+		
+		<footer>
+			<div class="footerBar">
+				<div class="content-width">
+					<h5>&copy; 2015 www.simxpins.com &trade;. All Rights Reserved.</h5>
+				</div>
+			</div>	
+		</footer>
 	</div><!--container fuid end-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="scripts/jquery-2.1.4.min.js"></script> 
+<script src="scripts/jquery-ui.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="scripts/bootstrap.min.js"></script>
 <!--  Main script file -->

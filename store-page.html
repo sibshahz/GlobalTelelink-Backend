@@ -5,11 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Your Website title here</title>
+	<title>Global Telelink</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<!-- fontAwsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- StyleSheet -->
 	<link rel="stylesheet" href="css/stylesheets/style.css">
 	<!--[if lt IE 7]>
@@ -40,13 +45,899 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<header>
-				
-		</header>
+		<header class="clearfix">
+				<div class="entr-con row">
+					<div class="content-width">
+						<div class="cus-det-con col-xs-12 col-sm-6">
+							<div class="use-pic">
+								<span class="fa fa-user"></span>
+							</div>
+							<div class="use-com-det">
+								<h5>Customer Name</h5>
+								<div class="wel-cus">Welcome You are logged in as "Shop Keeper"</div>
+								<div class="cus-id">Customer ID: abcs</div>
+								<div class="cus-bal">Current Balance: 70000.00 &euro;</div>
+							</div>
+						</div><!--end cus-det-con-->
 
+						<div class="use-ope col-xs-12 col-sm-6">
+							<ul class="use-opt">
+								<li><a href="login.html"><span class="fa fa-power-off"></span>Log out</a></li>
+								<li class="list-selector"><a href="#"><span class="fa fa-cogs"></span><span>Settings</span></a>
+									<ul class="select-list">
+										<li><a href="user-management.html">User Management</a></li>
+										<li><a href="#">Tracking</a></li>
+									</ul>
+								</li>
+								<li class="list-selector"><a href="#"><span class="fa fa-language"></span><span>Language</span></a>
+									<ul class="select-list">
+										<li><a href="#">English</a></li>
+										<li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--end content width-->
+				</div><!--end entr-con-->
+
+				<div class="nav-con">
+					<div class="content-width">
+					<a href="#" class="nav-op"><span class="fa fa-bars"></span></a>
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html"><span class="fa fa-home"></span>HOME</a></li>
+								<li><a href="store-page.html"><span class="fa fa-shopping-bag"></span>SHOP</a></li>
+								<li><a href="report-profit.html"><span class="fa fa-eur"></span>PROFIT/LOSS</a></li>
+								<li><a href="report-sales.html"><span class="fa fa-line-chart"></span>SALE</a></li>
+								<li><a href="report-discount.html"><span class="fa fa-tags"></span>DISCOUNTS</a></li>
+								<li><a href="report-uploads.html"><span class="fa fa-upload"></span>UPLOADS</a></li>
+								<li><a href="report-daily-sale.html"><span class="fa fa-bar-chart"></span>DAILY SALE</a></li>
+								<li><a href="report-invoices.html"><span class="fa fa-list-alt"></span>INVOICES</a></li>
+								<li><a href="report-return.html"><span class="fa fa-reply-all"></span>RETURN</a></li>
+								<li><a href="contact-us.html"><span class="fa fa-envelope"></span>CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div><!--end nav-con-->
+
+		</header>
+		
+		<div class="prod-nav">
+			<div class="content-width">
+				<div class="prod-links">
+					<ul>
+						<li><a href="#">All Cards</a></li>
+						<li><a href="#">Calling Cards</a></li>
+						<li><a href="#">Cash Cards</a></li>
+						<li><a href="#">Payment Cards</a></li>
+						<li><a href="#">Call Through</a></li>
+					</ul>
+				</div>
+
+				<div class="prod-tags">
+					<ul>
+						<li><a href="#"><span class="tag-box">A</span></a></li>
+						<li><a href="#"><span class="tag-box">B</span></a></li>
+						<li><a href="#"><span class="tag-box">C</span></a></li>
+						<li><a href="#"><span class="tag-box">D</span></a></li>
+						<li><a href="#"><span class="tag-box">E</span></a></li>
+						<li><a href="#"><span class="tag-box">F</span></a></li>
+						<li><a href="#"><span class="tag-box">G</span></a></li>
+						<li><a href="#"><span class="tag-box">H</span></a></li>
+						<li><a href="#"><span class="tag-box">I</span></a></li>
+						<li><a href="#"><span class="tag-box">J</span></a></li>
+						<li><a href="#"><span class="tag-box">K</span></a></li>
+						<li><a href="#"><span class="tag-box">L</span></a></li>
+						<li><a href="#"><span class="tag-box">M</span></a></li>
+						<li><a href="#"><span class="tag-box">N</span></a></li>
+						<li><a href="#"><span class="tag-box">O</span></a></li>
+						<li><a href="#"><span class="tag-box">P</span></a></li>
+						<li><a href="#"><span class="tag-box">Q</span></a></li>
+						<li><a href="#"><span class="tag-box">R</span></a></li>
+						<li><a href="#"><span class="tag-box">S</span></a></li>
+						<li><a href="#"><span class="tag-box">T</span></a></li>
+						<li><a href="#"><span class="tag-box">U</span></a></li>
+						<li><a href="#"><span class="tag-box">V</span></a></li>
+						<li><a href="#"><span class="tag-box">W</span></a></li>
+						<li><a href="#"><span class="tag-box">X</span></a></li>
+						<li><a href="#"><span class="tag-box">Y</span></a></li>
+						<li><a href="#"><span class="tag-box">Z</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-width content-main">
+			<div class="prod-set row">
+				
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product2.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							25.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<div class="out-stock">
+							Out of Stock
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product2.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							25.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<div class="out-stock">
+							Out of Stock
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product2.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							25.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<div class="out-stock">
+							Out of Stock
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product2.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							25.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<div class="out-stock">
+							Out of Stock
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product2.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							25.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<div class="out-stock">
+							Out of Stock
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product2.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							25.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<div class="out-stock">
+							Out of Stock
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-cont col-xs-6 col-sm-3 col-md-2">
+					<div class="prod-tit">
+						Eplus Cash Card
+					</div>
+					<div class="prod-img">
+						<img src="images/product.jpg" alt="Eplus Cash Card">
+					</div>
+					<div class="prod-act">
+						<div class="prod-pri">
+							15.00&euro;
+						</div>
+						<div class="buy-act" data-quantity="1">
+							<a href="single-product.html">
+								<div class="in-stock">
+									<span class="fa fa-cart-plus"></span>
+									Buy Now
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			
+			</div><!--end prod-set-->
+		</div><!--content main end-->
+		
+		<footer>
+			<div class="footerBar">
+				<div class="content-width">
+					<h5>&copy; 2015 www.simxpins.com &trade;. All Rights Reserved.</h5>
+				</div>
+			</div>	
+		</footer>
 	</div><!--container fuid end-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="scripts/jquery-2.1.4.min.js"></script> 
+<script src="scripts/jquery-ui.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="scripts/bootstrap.min.js"></script>
 <!--  Main script file -->

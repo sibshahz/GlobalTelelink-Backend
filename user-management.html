@@ -5,11 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Your Website title here</title>
+	<title>Global Telelink</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<!-- fontAwsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- StyleSheet -->
 	<link rel="stylesheet" href="css/stylesheets/style.css">
 	<!--[if lt IE 7]>
@@ -40,13 +45,306 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<header>
-				
-		</header>
+		<header class="clearfix">
+				<div class="entr-con row">
+					<div class="content-width">
+						<div class="cus-det-con col-xs-12 col-sm-6">
+							<div class="use-pic">
+								<span class="fa fa-user"></span>
+							</div>
+							<div class="use-com-det">
+								<h5>Customer Name</h5>
+								<div class="wel-cus">Welcome You are logged in as "Shop Keeper"</div>
+								<div class="cus-id">Customer ID: abcs</div>
+								<div class="cus-bal">Current Balance: 70000.00 &euro;</div>
+							</div>
+						</div><!--end cus-det-con-->
 
+						<div class="use-ope col-xs-12 col-sm-6">
+							<ul class="use-opt">
+								<li><a href="login.html"><span class="fa fa-power-off"></span>Log out</a></li>
+								<li class="list-selector"><a href="#"><span class="fa fa-cogs"></span><span>Settings</span></a>
+									<ul class="select-list">
+										<li><a href="user-management.html">User Management</a></li>
+										<li><a href="#">Tracking</a></li>
+									</ul>
+								</li>
+								<li class="list-selector"><a href="#"><span class="fa fa-language"></span><span>Language</span></a>
+									<ul class="select-list">
+										<li><a href="#">English</a></li>
+										<li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--end content width-->
+				</div><!--end entr-con-->
+
+				<div class="nav-con">
+					<div class="content-width">
+					<a href="#" class="nav-op"><span class="fa fa-bars"></span></a>
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html"><span class="fa fa-home"></span>HOME</a></li>
+								<li><a href="store-page.html"><span class="fa fa-shopping-bag"></span>SHOP</a></li>
+								<li><a href="report-profit.html"><span class="fa fa-eur"></span>PROFIT/LOSS</a></li>
+								<li><a href="report-sales.html"><span class="fa fa-line-chart"></span>SALE</a></li>
+								<li><a href="report-discount.html"><span class="fa fa-tags"></span>DISCOUNTS</a></li>
+								<li><a href="report-uploads.html"><span class="fa fa-upload"></span>UPLOADS</a></li>
+								<li><a href="report-daily-sale.html"><span class="fa fa-bar-chart"></span>DAILY SALE</a></li>
+								<li><a href="report-invoices.html"><span class="fa fa-list-alt"></span>INVOICES</a></li>
+								<li><a href="report-return.html"><span class="fa fa-reply-all"></span>RETURN</a></li>
+								<li><a href="contact-us.html"><span class="fa fa-envelope"></span>CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div><!--end nav-con-->
+
+		</header>
+		
+		<div class="content-width content-main">
+			<div class="usr-mgt-sec">
+				<h1>Current User</h1>
+				<div class="tagline">Add or Remove your Current Users</div>
+				<div class="usr-act">
+					<div class="table-responsive">
+
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>
+									</th>
+									
+									<th>
+										
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												SalesMan
+											</label>
+										</div>
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												Shopkeeper | Employee
+											</label>
+										</div>
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												Active
+											</label>
+										</div>
+
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												In Active
+											</label>
+										</div>
+									</th>
+
+									<th>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="checked">
+												View All
+											</label>
+										</div>
+									</th>
+
+								</tr>
+								<tr>
+									<th>User Image</th>
+									<th>Login Name</th>
+									<th>User Name (Role)</th>
+									<th>Parent (Role)</th>
+									<th>Status</th>
+									<th>Action</th>
+
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+								<tr>
+									<td><div class="us-img-con"><span class="fa fa-user"></span></div></td>
+									<td>ABCDEF</td>
+									<td>ACD1001</td>
+									<td>XYZ-09011Z</td>
+									<td>2 hours ago</td>
+									<td>
+										<a href=""><span class="fa fa-pencil-square-o "></span></a>
+										<a href=""><span class="fa fa-user-times"></span></a>									
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					
+					</div><!--table responsive end-->
+				</div><!--usr act end-->
+			</div><!--end usr-mgt-sec-->
+
+			<div class="usr-reg-sec clearfix">
+				<h1>Register Account</h1>
+				<div class="reg tag-line">If you already have an account with us, please login at the <a href="#">Login page</a></div>
+				<form action="#" method="POST" role="form">
+					<legend>YOUR PERSONAL DETAILS</legend>
+					<div class="col-xs-12 col-sm-6">
+					
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-user"></span>First Name*</label>
+							<input type="text" class="form-control" id="" placeholder="Akhlaq">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-user"></span>Last Name*</label>
+							<input type="text" class="form-control" id="" placeholder="Ahmad">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-briefcase"></span>Role*</label>
+							<select class="form-control">
+								<option>Shopkeeper's Employees</option>
+								<option>Business Employees</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-group"></span>Parent*</label>
+							<select class="form-control">
+								<option>Self</option>
+								<option>Parents</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6">
+					
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-user"></span>Login Name*</label>
+							<input type="text" class="form-control" id="" placeholder="Akhlaq09011">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-envelope"></span>Email*</label>
+							<input type="email" class="form-control" id="" placeholder="aahmad@gmail.com">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-mobile"></span>Mobile No*</label>
+							<input type="email" class="form-control" id="" placeholder="+(92) 111 333 35">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<label for="" class="input-group-addon"><span class="fa fa-lock"></span>Password*</label>
+							<input type="password" class="form-control" id="" placeholder="*********">
+						</div>
+					</div>
+
+					<div class="radio">
+						<label>
+							Active / Inactive*
+							<input type="checkbox" name="active" id="inputActive" value="" checked="checked">
+						</label>
+					</div>
+
+				</div>
+
+
+					<div class="border-top col-xs-12">
+						<div class="buttons-cont">
+							<div class="button-con">
+								<span class="fa fa-user-plus"></span>
+								<input type="button" value="CREATE"  class="handlers">
+							</div>
+
+							<div class="button-con">
+								<span class="fa fa-times"></span>
+								<input type="button" value="CANCEL" class="handlers">
+							</div>
+						</div>
+					</div>
+				
+				</form>
+			</div><!---end usr-reg-sec-->
+
+		</div><!--content main end-->
+		
+		<footer>
+			<div class="footerBar">
+				<div class="content-width">
+					<h5>&copy; 2015 www.simxpins.com &trade;. All Rights Reserved.</h5>
+				</div>
+			</div>	
+		</footer>
 	</div><!--container fuid end-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="scripts/jquery-2.1.4.min.js"></script> 
+<script src="scripts/jquery-ui.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="scripts/bootstrap.min.js"></script>
 <!--  Main script file -->

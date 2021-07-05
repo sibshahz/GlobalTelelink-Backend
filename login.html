@@ -5,11 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Your Website title here</title>
+	<title>Global Telelink</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<!-- fontAwsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- StyleSheet -->
 	<link rel="stylesheet" href="css/stylesheets/style.css">
 	<!--[if lt IE 7]>
@@ -38,15 +43,73 @@
 	      <link href="css/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<![endif]-->
 </head>
-<body>
+<body class="login">
 	<div class="container-fluid">
-		<header>
-				
+		<header class="clearfix">
+				<div class="entr-con row">
+					<div class="content-width">
+						<div class="use-ope col-xs-12 col-sm-6">
+							<ul class="use-opt">
+								<li class="list-selector"><a href="#"><span class="fa fa-language"></span><span>Language</span></a>
+									<ul class="select-list">
+										<li><a href="#">English</a></li>
+										<li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--end content width-->
+				</div><!--end entr-con-->
 		</header>
+		
+		<div class="login-page content-main">
+			<div id="log-cont-con">
+				
+				<div class="pop-con">
+					<form action="#" method="POST" role="form">
+						<legend>Secure Login</legend>
+					
+						<div class="form-group input-group">
+							<input type="text" class="form-control" placeholder="Username">
+							<span class="input-group-addon"><span class="fa fa-user"></span></span>
+						</div>
 
+						<div class="form-group input-group">
+							<input type="password" class="form-control" placeholder="Password">
+							<span class="input-group-addon"><span class="fa fa-key"></span></span>
+						</div>
+
+						<div class="form-group clearfix">
+							<div class="left-ele">
+								<a href="#"> Forgot your password?</a>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="" checked="checked">
+										Remember me
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign In</button>
+						</div>
+					
+					</form>
+				</div>
+
+				<div class="col-xs-12 text-center">If you are having trouble signing up please contact us using contact page.</div>
+			</div>
+		</div><!--content main end-->
+		
+		<footer>
+			<div class="footerBar">
+				<div class="content-width">
+					<h5>&copy; 2015 www.simxpins.com &trade;. All Rights Reserved.</h5>
+				</div>
+			</div>	
+		</footer>
 	</div><!--container fuid end-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="scripts/jquery-2.1.4.min.js"></script> 
+<script src="scripts/jquery-ui.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="scripts/bootstrap.min.js"></script>
 <!--  Main script file -->
